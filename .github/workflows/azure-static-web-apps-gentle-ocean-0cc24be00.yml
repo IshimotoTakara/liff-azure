@@ -18,8 +18,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - name: Reinstall npm
-        run: |
+      - run: |
           rm -rf node_modules
           rm package-lock.json
           npm cache clear --force
